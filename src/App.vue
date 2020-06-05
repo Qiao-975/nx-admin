@@ -2,7 +2,7 @@
   <div id="app">
     <!--登入动画-->
     <transition name="rotate-fall">
-    <router-view  class="app-router-view"></router-view>
+      <router-view class="app-router-view" />
     </transition>
   </div>
 </template>
@@ -14,7 +14,8 @@ export default {
 }
 
 </script>
-<style>
+<style lang="scss">
+@import './scss/color.scss';
   .app .app-router-view {
     position: absolute;
     top: 0;

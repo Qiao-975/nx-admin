@@ -45,7 +45,7 @@ export const constantRouterMap = [
     name: '锁屏页',
     component: () => import('@/views/common/lock')
   },
-  // 报表
+  // 报表 / 首页
   {
     path: '/dashboard',
     component: Layout,
@@ -59,7 +59,38 @@ export const constantRouterMap = [
       }
     ]
   },
-  // 图表
+  // 项目档案
+  {
+    path: '/project-archives',
+    component: Layout,
+    meta: { title: 'projectArchives', icon: 'projectArchives' },
+    children: [
+      {
+        path: 'project-archives',
+        name: 'project-archives',
+        component: () => import('@/views/project-archives/index'),
+        meta: { title: 'projectArchives', icon: 'star' }
+      }
+
+    ]
+  },
+  // 项目流程管理 / 信息科技项目全流程数据管理
+  {
+    path: '/project-process-management',
+    component: Layout,
+    meta: { title: 'project-process-management', icon: 'projectArchives' },
+    children: [
+      {
+        path: 'project-process-management',
+        name: 'project-process-management',
+        component: () => import('@/views/project-process-management/index'),
+        meta: { title: 'projectProcessManagement', icon: 'star' }
+      }
+
+    ]
+  },
+
+  // 图表 / charts
   {
     path: '/charts',
     component: Layout,
@@ -216,7 +247,7 @@ export const constantRouterMap = [
     }]
 
   },
-
+  // 动态文字
   {
     path: '/wel',
     component: Layout,

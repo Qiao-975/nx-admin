@@ -70,6 +70,8 @@ export default {
     page404: '404',
     thirdPartyWebsite: 'thirdPartyWebsite',
     charts: 'Charts',
+    projectArchives: 'projectArchives',
+    projectProcessManagement: 'projectProcessManagement',
     emoji: 'emoji',
     test: 'test',
     excel: 'Excel',

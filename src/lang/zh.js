@@ -68,6 +68,8 @@ export default {
     page404: '404',
     thirdPartyWebsite: '第三方网站',
     charts: 'Charts',
+    projectArchives: '项目管理',
+    projectProcessManagement: '项目流程管理',
     emoji: 'emoji',
     test: 'test',
     excel: 'Excel',
